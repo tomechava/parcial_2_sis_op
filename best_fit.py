@@ -1,5 +1,8 @@
 
 def best_fit(work_memory, req, index):
+    if not work_memory:  # Si la memoria de trabajo está vacía, retorna None inmediatamente
+        return None
+    
     best_pos = -1
 
     for j in range(len(work_memory)):  #Cicle between memory blocs
